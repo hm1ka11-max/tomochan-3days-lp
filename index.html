@@ -7,33 +7,47 @@
   <meta name="description" content="もう手作業には戻れない。フリープラン徹底活用　月50万安定の自動化戦略 3Daysセミナー" />
 
   <style>
-　　　:root{
-  　　　--bg:#f4f9fc;
-  　　　--bg-soft:#eef7fb;
- 　　　 --main:#234f93;
- 　　　 --sub:#7ccfd6;
-  　　　--accent:#d8b24a;
- 　　　 --accent-soft:#f3e4a8;
-  　　　--text:#2d3b52;
-  　　　--white:#ffffff;
-  　　　--line:#d9eaf2;
-  　　　--shadow:0 10px 30px rgba(35,79,147,.10);
-  　　　--radius:22px;
-　　　}
+    :root{
+      --bg:#f3f8fb;
+      --bg-soft:#edf6fa;
+      --white:#ffffff;
+      --main:#244c90;
+      --main-deep:#1f3f78;
+      --sub:#8fd6da;
+      --accent:#d7b458;
+      --accent-soft:#f4e7b0;
+      --text:#33435c;
+      --muted:#6c7b91;
+      --line:#dbeaf0;
+      --shadow:0 12px 32px rgba(36,76,144,.10);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --radius-md:16px;
+      --max:1040px;
+    }
 
     *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
+
     body{
-　　　  margin:0;
- 　　　 font-family:
-   　　　 "Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",
-  　　　  "Noto Sans JP",system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
-  　　　color:var(--text);
-  　　　background:linear-gradient(180deg, #f3f8fc 0%, #eef7fb 100%);
-  　　　line-height:1.8;
-　　　}
-    img{max-width:100%;display:block}
-    a{text-decoration:none;color:inherit}
+      margin:0;
+      font-family:
+        "Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",
+        "Noto Sans JP",system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top, #f8fcff 0%, #eef6fa 45%, #edf4f8 100%);
+      line-height:1.85;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
 
     .wrap{
       width:min(100% - 32px, var(--max));
@@ -41,198 +55,201 @@
     }
 
     .section{
-      padding:56px 0;
+      padding:64px 0;
     }
 
-    .card,
-    .day-card,
-    .voice,
-    .benefit-item,
-    .tokuten,
-    .result,
-    .faq-item{
+    .section-inner{
       background:rgba(255,255,255,.94);
+      border:1px solid var(--line);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      padding:40px 28px;
+    }
+
+    .section-kicker{
+      display:inline-block;
+      margin:0 auto 12px;
+      padding:6px 14px;
+      border-radius:999px;
+      background:#eef6fb;
+      border:1px solid #d7e8f2;
+      color:var(--main);
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:.08em;
+    }
+
+    .section-head{
+      text-align:center;
+      margin-bottom:28px;
+    }
+
+    .section-title{
+      margin:0;
+      font-size:clamp(24px, 4vw, 36px);
+      line-height:1.4;
+      letter-spacing:.04em;
+      color:var(--main);
+    }
+
+    .section-lead{
+      max-width:760px;
+      margin:14px auto 0;
+      color:var(--muted);
+    }
+
+    .hero{
+      padding:24px 0 54px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.24), rgba(255,255,255,.82)),
+        linear-gradient(135deg, #d8f0f4 0%, #eff8fb 42%, #f7fbfd 100%);
+    }
+
+    .hero-visual{
+      width:100%;
+      padding:8px 16px 0;
+    }
+
+    .hero-visual img{
+      width:100%;
+      max-width:760px;
+      margin:0 auto;
+      border-radius:28px;
+      box-shadow:0 16px 40px rgba(36,76,144,.14);
+    }
+
+    .hero-cta-only{
+      max-width:760px;
+      margin:24px auto 0;
+      text-align:center;
+    }
+
+    .btn{
+      display:inline-block;
+      min-width:260px;
+      padding:16px 30px;
+      border-radius:999px;
+      background:linear-gradient(135deg, #e3c469, #d7b458);
+      color:#24344d;
+      font-weight:700;
+      font-size:18px;
+      box-shadow:0 10px 24px rgba(215,180,88,.28);
+      transition:transform .2s ease, opacity .2s ease;
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+      opacity:.97;
+    }
+
+    .hero-note{
+      margin-top:12px;
+      font-size:14px;
+      color:var(--muted);
+    }
+
+    .day-card,
+    .benefit-item,
+    .voice,
+    .result,
+    .faq-item,
+    .tokuten{
+      background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(249,252,253,.96));
       border:1px solid var(--line);
       border-radius:22px;
       box-shadow:var(--shadow);
     }
 
-    .section-title{
-      font-size:clamp(24px, 4vw, 36px);
-      line-height:1.4;
-      color:var(--main);
-      margin:0 0 16px;
-      text-align:center;
-      letter-spacing:.03em;
-    }
-
-    .section-lead{
-      text-align:center;
-      margin:0 auto 28px;
-      max-width:760px;
-    }
-
-    .btn{
-      display:inline-block;
-      background:linear-gradient(135deg, #e4c15a, #d8b24a);
-      color:#21324a;
-      font-weight:700;
-      padding:16px 30px;
-      border-radius:999px;
-      box-shadow:0 10px 24px rgba(216,178,74,.28);
-      transition:.2s ease;
-    }
-
-    .btn:hover{
-      transform:translateY(-2px);
-      opacity:.96;
-    }
-
-    .btn-wrap{
-      text-align:center;
-      margin-top:24px;
-    }
-.hero{
-  background:
-    linear-gradient(180deg, rgba(255,255,255,.35), rgba(255,255,255,.95)),
-    linear-gradient(135deg, #cbe8f7 0%, #d9f0ff 45%, #eef8ff 100%);
-  padding:0 0 40px;
-}
-
-.hero-visual{
-  width:100%;
-  padding:24px 16px 0;
-}
-
-.hero-visual img{
-  width:100%;
-  max-width:720px;
-  margin:0 auto;
-  display:block;
-  height:auto;
-  border-radius:24px;
-  box-shadow:var(--shadow);
-}
-
-.hero-cta-only{
-  max-width:720px;
-  margin:20px auto 0;
-  text-align:center;
-}
-
-.hero-cta-only .btn-wrap{
-  text-align:center;
-}
-
-.hero-note{
-  font-size:14px;
-  color:#5b6b82;
-  margin-top:12px;
-}
     .schedule-grid,
     .benefit-grid,
     .voice-grid,
-    .result-grid{
+    .result-grid,
+    .tokuten-grid{
       display:grid;
       gap:20px;
     }
 
     .schedule-grid{
-      grid-template-columns:repeat(3, 1fr);
+      grid-template-columns:repeat(3,1fr);
+    }
+
+    .benefit-grid,
+    .tokuten-grid{
+      grid-template-columns:repeat(2,1fr);
+    }
+
+    .voice-grid,
+    .result-grid{
+      grid-template-columns:repeat(3,1fr);
     }
 
     .day-card{
-      background:var(--white);
-      border:1px solid var(--line);
-      border-radius:20px;
       padding:24px;
-      box-shadow:var(--shadow);
     }
 
     .day-label{
       display:inline-block;
-      background:var(--accent);
-      color:#694d00;
-      font-weight:700;
-      font-size:13px;
-      border-radius:999px;
-      padding:6px 12px;
       margin-bottom:12px;
+      padding:6px 12px;
+      border-radius:999px;
+      background:#f8efc8;
+      color:#7a5f10;
+      font-size:12px;
+      font-weight:700;
     }
 
     .day-card h3{
-      margin:0 0 8px;
+      margin:0 0 10px;
       color:var(--main);
       font-size:22px;
-      line-height:1.4;
+      line-height:1.45;
     }
 
     .date{
+      color:var(--main-deep);
       font-weight:700;
-      margin-bottom:10px;
-      color:#2f4668;
+      margin-bottom:12px;
     }
 
-    .list{
-      margin:0;
-      padding-left:1.2em;
+    .benefit-item,
+    .voice,
+    .result,
+    .tokuten,
+    .faq-item{
+      padding:22px 20px;
+    }
+
+    .benefit-item strong,
+    .result strong{
+      color:var(--main);
     }
 
     .check-list{
       display:grid;
       grid-template-columns:1fr 1fr;
-      gap:12px 24px;
-      margin:0;
-      padding:0;
+      gap:14px 20px;
       list-style:none;
+      padding:0;
+      margin:0;
     }
 
     .check-list li{
-      background:var(--white);
+      background:rgba(255,255,255,.9);
       border:1px solid var(--line);
-      border-radius:14px;
-      padding:14px 16px;
-      box-shadow:var(--shadow);
-    }
-
-    .benefit-grid{
-      grid-template-columns:repeat(2, 1fr);
-    }
-
-    .benefit-item{
-      background:var(--white);
       border-radius:16px;
-      border:1px solid var(--line);
-      padding:18px 20px;
+      padding:16px 18px;
       box-shadow:var(--shadow);
-    }
-
-    .benefit-item strong{
-      color:var(--main);
-    }
-
-    .tokuten-grid{
-      display:grid;
-      grid-template-columns:repeat(2, 1fr);
-      gap:16px;
-    }
-
-    .tokuten{
-      background:linear-gradient(180deg, #fffef8, #ffffff);
-      border:1px solid #ecdca0;
-      padding:18px;
     }
 
     .profile{
       display:grid;
       grid-template-columns:240px 1fr;
-      gap:24px;
+      gap:26px;
       align-items:start;
     }
 
     .profile-image img{
-      width:100%;
-      border-radius:20px;
+      border-radius:22px;
       box-shadow:var(--shadow);
     }
 
@@ -243,119 +260,64 @@
     }
 
     .sub-title{
-      color:#58739b;
+      color:var(--muted);
       font-weight:700;
       margin-bottom:12px;
     }
 
-    .voice-grid{
-      grid-template-columns:repeat(3, 1fr);
-    }
-
-    .voice{
-      background:var(--white);
-      border:1px solid var(--line);
-      border-radius:18px;
-      padding:20px;
-      box-shadow:var(--shadow);
-    }
-
-    .voice .tag{
-      display:inline-block;
-      font-size:12px;
-      color:#7b5e00;
-      background:#fff4c9;
-      border-radius:999px;
-      padding:4px 10px;
-      margin-bottom:10px;
-      font-weight:700;
-    }
-
-    .result-grid{
-      grid-template-columns:repeat(3, 1fr);
-    }
-
-    .result{
-      background:var(--white);
-      border-radius:16px;
-      border:1px solid var(--line);
-      padding:20px;
-      text-align:center;
-      box-shadow:var(--shadow);
-    }
-
-    .result strong{
-      display:block;
+    .faq-item .faq-q{
       color:var(--main);
-      font-size:28px;
-      line-height:1.3;
-      margin-bottom:6px;
-    }
-
-    .cta{
-      background:linear-gradient(180deg, #eaf5ff, #fdfefe);
-      border-top:1px solid #d7e8fb;
-      border-bottom:1px solid #d7e8fb;
-    }
-
-    .cta-box{
-      background:var(--white);
-      border-radius:24px;
-      padding:32px;
-      box-shadow:var(--shadow);
-      text-align:center;
-    }
-
-    .faq{
-      display:grid;
-      gap:14px;
-    }
-
-    .faq-item{
-      background:var(--white);
-      border:1px solid var(--line);
-      border-radius:16px;
-      padding:18px 20px;
-      box-shadow:var(--shadow);
-    }
-
-    .faq-q{
       font-weight:700;
-      color:var(--main);
       margin-bottom:8px;
     }
 
-    footer{
-      padding:32px 0 48px;
+    .cta{
+      padding-bottom:72px;
+    }
+
+    .cta-box{
+      background:linear-gradient(180deg, rgba(255,255,255,.96), rgba(240,248,251,.96));
+      border:1px solid var(--line);
+      border-radius:30px;
+      box-shadow:var(--shadow);
+      padding:38px 28px;
       text-align:center;
-      color:#64748b;
+    }
+
+    footer{
+      padding:28px 0 46px;
+      text-align:center;
+      color:var(--muted);
       font-size:14px;
     }
 
     @media (max-width: 860px){
-      .hero-grid,
-      .profile,
+      .section{
+        padding:44px 0;
+      }
+
+      .section-inner,
+      .cta-box{
+        padding:28px 18px;
+      }
+
       .schedule-grid,
+      .benefit-grid,
       .voice-grid,
       .result-grid,
-      .benefit-grid,
       .tokuten-grid,
-      .check-list{
+      .check-list,
+      .profile{
         grid-template-columns:1fr;
       }
 
-      .hero{
-        padding-top:20px;
+      .hero-visual img{
+        max-width:100%;
       }
 
-      .section{
-        padding:42px 0;
-      }
-
-      .card,
-      .hero-copy,
-      .cta-box{
-        padding:22px;
+      .btn{
+        width:100%;
+        max-width:340px;
       }
     }
   </style>
