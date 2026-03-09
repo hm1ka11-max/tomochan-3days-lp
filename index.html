@@ -94,62 +94,46 @@
       padding:32px 0 48px;
     }
 
-    .hero-grid{
-      display:grid;
-      grid-template-columns:1.1fr .9fr;
-      gap:28px;
-      align-items:center;
-    }
+    .hero{
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.35), rgba(255,255,255,.9)),
+    linear-gradient(135deg, #cbe8f7 0%, #d9f0ff 45%, #eef8ff 100%);
+  padding:0 0 48px;
+}
 
-    .hero-copy{
-      background:rgba(255,255,255,.7);
-      border:1px solid rgba(255,255,255,.8);
-      border-radius:24px;
-      padding:28px;
-      box-shadow:var(--shadow);
-      backdrop-filter:blur(6px);
-    }
+.hero-visual{
+  width:100%;
+  background:#dff2ff;
+}
 
-    .eyebrow{
-      display:inline-block;
-      font-weight:700;
-      color:var(--main);
-      background:#eef6ff;
-      border:1px solid #d9e8fb;
-      border-radius:999px;
-      padding:6px 14px;
-      margin-bottom:12px;
-      font-size:14px;
-    }
+.hero-visual img{
+  width:100%;
+  max-width:1200px;
+  margin:0 auto;
+  display:block;
+  height:auto;
+}
 
-    .hero h1{
-      font-size:clamp(28px, 5vw, 48px);
-      line-height:1.25;
-      margin:0 0 14px;
-      color:var(--main);
-    }
+.hero-copy{
+  background:rgba(255,255,255,.88);
+  border:1px solid rgba(255,255,255,.9);
+  border-radius:24px;
+  padding:28px;
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(6px);
+  margin-top:24px;
+}
 
-    .hero h1 .accent{
-      color:#d3a500;
-      text-shadow:0 1px 0 rgba(255,255,255,.6);
-    }
+.hero-copy.single{
+  max-width:760px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
 
-    .hero p{
-      margin:0 0 12px;
-    }
-
-    .hero-note{
-      font-size:14px;
-      color:#5b6b82;
-    }
-
-    .hero-image img{
-      border-radius:24px;
-      box-shadow:var(--shadow);
-      width:100%;
-      height:auto;
-      object-fit:cover;
-    }
+.hero-copy.single .btn-wrap{
+  text-align:center;
+}
 
     .schedule-grid,
     .benefit-grid,
@@ -388,37 +372,34 @@
 
   <!-- ===== ファーストビュー ===== -->
   <header class="hero">
-    <div class="wrap">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow">Zoom開催｜参加費無料｜参加者限定特典あり</div>
-          <h1>
-            もう手作業には戻れない<br>
-            <span class="accent">月50万安定</span>の<br>
-            自動化戦略 3Days Seminar
-          </h1>
-          <p>
-            フリープラン徹底活用。<br>
-            LINEを使って、予約・販売・導線設計まで整える3日間。
-          </p>
-          <p class="hero-note">
-            Day1 3/19(木) 20:00〜｜Day2 3/28(土) 21:00〜｜Day3 3/29(日) 21:00〜
-          </p>
-          <div class="btn-wrap" style="text-align:left;">
-            <a class="btn" href="https://www.reservestock.jp/inquiry/OWFiMWE5MjUwO" target="_blank" rel="noopener noreferrer">
-              今すぐ無料で参加する
-            </a>
-          </div>
-          <p class="hero-note">※申込みボタンからフォームへ移動します</p>
-        </div>
+  <div class="hero-visual">
+    <img src="fv-top.png" alt="月50万安定の自動化戦略 3Days セミナー バナー">
+  </div>
 
-        <div class="hero-image">
-          <!-- Canvaで作ったバナー画像に差し替え -->
-          <img src="646365702_2330264284136057_92354403583266045_n.png" alt="月50万安定の自動化戦略 3Daysセミナー バナー">
-        </div>
+  <div class="wrap">
+    <div class="hero-copy single">
+      <div class="eyebrow">Zoom開催｜参加費無料｜参加者限定特典あり</div>
+      <h1>
+        もう手作業には戻れない<br>
+        <span class="accent">月50万安定</span>の<br>
+        自動化戦略 3Days Seminar
+      </h1>
+      <p>
+        フリープラン徹底活用。<br>
+        LINEを使って、予約・販売・導線設計まで整える3日間。
+      </p>
+      <p class="hero-note">
+        Day1 3/19(木) 20:00〜｜Day2 3/28(土) 21:00〜｜Day3 3/29(日) 21:00〜
+      </p>
+      <div class="btn-wrap">
+        <a class="btn" href="https://www.reservestock.jp/inquiry/OWFiMWE5MjUwO" target="_blank" rel="noopener noreferrer">
+          今すぐ無料で参加する
+        </a>
       </div>
+      <p class="hero-note">※申込みボタンから申込みページへ移動します</p>
     </div>
-  </header>
+  </div>
+</header>
 
   <!-- ===== 開催日・内容 ===== -->
   <section class="section">
