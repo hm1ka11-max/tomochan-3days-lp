@@ -363,6 +363,40 @@
       align-items:center;
       justify-content:center;
     }
+
+        .card{
+      background:rgba(255,255,255,.94);
+      border:1px solid var(--line);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      padding:32px 28px;
+    }
+
+    .list{
+      margin:0;
+      padding-left:1.2em;
+    }
+
+    .list li + li{
+      margin-top:8px;
+    }
+
+    .faq{
+      display:grid;
+      gap:20px;
+    }
+
+    .tag{
+      display:inline-block;
+      margin-bottom:10px;
+      padding:6px 12px;
+      border-radius:999px;
+      background:#eef6fb;
+      border:1px solid #d7e8f2;
+      color:var(--main);
+      font-size:12px;
+      font-weight:700;
+    }
   </style>
 </head>
 <body>
@@ -386,13 +420,16 @@
 </header>
 
   <!-- ===== 開催日・内容 ===== -->
-  <section class="section">
-    <div class="wrap">
-      <h2 class="section-title">開催日・内容</h2>
-      <p class="section-lead">
-        自動化の基本から、LINE構築の仕事化、売上につながる導線設計まで。
-        順番に学べる3Daysです。
-      </p>
+<section class="section">
+  <div class="wrap">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2 class="section-title">開催日・内容</h2>
+        <p class="section-lead">
+          自動化の基本から、LINE構築の仕事化、売上につながる導線設計まで。
+          順番に学べる3Daysです。
+        </p>
+      </div>
 
       <div class="schedule-grid">
         <article class="day-card">
