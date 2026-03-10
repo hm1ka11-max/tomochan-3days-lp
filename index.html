@@ -320,7 +320,49 @@
         max-width:340px;
       }
     }
-  </style>
+/* お悩みセクション */
+
+.trouble-box{
+  max-width:860px;
+  margin:0 auto;
+  background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(248,252,253,.96));
+  border:1px solid var(--line);
+  border-radius:24px;
+  box-shadow:var(--shadow);
+  padding:28px 24px;
+}
+
+.trouble-list{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:grid;
+  gap:16px;
+}
+
+.trouble-list li{
+  position:relative;
+  padding-left:42px;
+  font-size:17px;
+  line-height:1.9;
+}
+
+.trouble-list li::before{
+  content:"✓";
+  position:absolute;
+  left:0;
+  top:2px;
+  width:28px;
+  height:28px;
+  border-radius:999px;
+  background:linear-gradient(135deg,#e8f7f8,#d8f0f1);
+  border:1px solid #bfe4e6;
+  color:var(--main);
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
 </head>
 <body>
 
@@ -390,23 +432,30 @@
 
   <!-- ===== 悩み ===== -->
   <section class="section">
-  <div class="wrap">
-    <div class="section-inner">
-      <div class="section-head">
-        <div class="section-kicker">For You</div>
-        <h2 class="section-title">こんなお悩みありませんか？</h2>
-        <p class="section-lead">導線が整わない、手作業が多い、何から始めればいいかわからない方へ。</p>
-      </div>
-      <ul class="check-list">
-        <li>LINEを作ったけど活用できていない</li>
-        <li>導線がよくわからず手が止まる</li>
-        <li>手作業対応が多くて毎回しんどい</li>
-        <li>商品はあるのに売上につながらない</li>
-        <li>自動化したいけど難しそうで止まっている</li>
-        <li>LINE構築を仕事にしてみたい</li>
-      </ul>
-    </div>
-  </section>
+  　<div class="wrap">
+    　<div class="section-inner">
+     　 <div class="section-head">
+       　 <div class="section-kicker">For You</div>
+        　<h2 class="section-title">こんなお悩みありませんか？</h2>
+        　<p class="section-lead">
+         　 ひとつでも当てはまる方は、この3Daysがヒントになるかもしれません。
+        　</p>
+      　</div>
+
+      　<div class="trouble-box">
+        　<ul class="trouble-list">
+          　<li>何か始めたいのに、何を売ればいいかが決まらない</li>
+          　<li>商品がないからLINEを作っても意味がないと思って止まっている</li>
+          　<li>そもそも導線って何？どこから作るの？でフリーズする</li>
+          　<li>自信がなくて募集やセールスが怖い。断られるのが怖い</li>
+          　<li>集客を頑張って疲弊している</li>
+          　<li>頑張り続ける働き方ではなく、もっと心に余裕・余白のある働き方がしたい</li>
+          　<li>商品はあるのに仕組みができていないから売上が安定しない</li>
+        　</ul>
+      　</div>
+    　</div>
+  　</div>
+　</section>
 
   <!-- ===== 得られること ===== -->
   <section class="section">
