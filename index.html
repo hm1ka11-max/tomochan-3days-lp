@@ -497,6 +497,119 @@
         max-width:180px;
       }
     }    
+
+.bonus-special{
+  background:linear-gradient(180deg, rgba(236,247,251,.96), rgba(255,255,255,.96));
+}
+
+.bonus-intro-card{
+  max-width:860px;
+  margin:0 auto 28px;
+}
+
+.bonus-main-label{
+  display:inline-block;
+  margin:0 auto 16px;
+  padding:10px 18px;
+  border-radius:999px;
+  background:linear-gradient(135deg, #9edfe8, #7fcfdc);
+  color:#1f3f78;
+  font-weight:700;
+  font-size:15px;
+}
+
+.bonus-main-box{
+  display:grid;
+  grid-template-columns:120px 1fr;
+  gap:20px;
+  align-items:center;
+  background:rgba(255,255,255,.96);
+  border:1px solid var(--line);
+  border-radius:24px;
+  box-shadow:var(--shadow);
+  padding:24px;
+}
+
+.bonus-badge{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:92px;
+  border-radius:18px;
+  background:linear-gradient(180deg, #d9bf68, #b9932f);
+  color:#fff;
+  font-weight:700;
+  font-size:24px;
+  box-shadow:0 8px 18px rgba(185,147,47,.25);
+}
+
+.bonus-badge.large{
+  min-height:110px;
+  font-size:28px;
+}
+
+.bonus-main-content h3,
+.bonus-card-body h3{
+  margin:0 0 8px;
+  color:var(--main);
+  line-height:1.5;
+}
+
+.bonus-main-content p{
+  margin:0;
+  color:var(--muted);
+}
+
+.bonus-subhead{
+  text-align:center;
+  margin:30px 0 20px;
+  font-weight:700;
+  color:var(--main);
+  font-size:20px;
+}
+
+.bonus-cards{
+  display:grid;
+  gap:18px;
+}
+
+.bonus-card{
+  display:grid;
+  grid-template-columns:120px 1fr;
+  gap:20px;
+  align-items:center;
+  background:rgba(255,255,255,.96);
+  border:1px solid var(--line);
+  border-radius:24px;
+  box-shadow:var(--shadow);
+  padding:22px;
+}
+
+.bonus-condition{
+  display:inline-block;
+  margin-bottom:10px;
+  padding:6px 12px;
+  border-radius:999px;
+  background:#eef6fb;
+  border:1px solid #d7e8f2;
+  color:var(--main);
+  font-size:13px;
+  font-weight:700;
+}
+
+@media (max-width: 860px){
+  .bonus-main-box,
+  .bonus-card{
+    grid-template-columns:1fr;
+  }
+
+  .bonus-badge,
+  .bonus-badge.large{
+    min-height:72px;
+    font-size:22px;
+  }
+}
+
     
   </style>
 </head>
@@ -569,34 +682,90 @@
     </div>
   </section>
   
-  <!-- ===== 7大特典 ===== -->
-  <section class="section">
-    <div class="wrap">
-      <div class="section-inner">
-        <div class="section-head">
-          <div class="section-kicker">Bonus</div>
-          <h2 class="section-title">参加者限定 7大特典もご用意しています</h2>
-          <p class="section-lead">
-            受講後すぐに活かしやすい内容を、特典として受け取っていただけます。
-          </p>
-        </div>
+<!-- ===== 7大特典 ===== -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-inner bonus-special">
+      <div class="section-head">
+        <div class="section-kicker">Special Bonus</div>
+        <h2 class="section-title">参加するだけで受け取れる<br>7大特典をご用意しています</h2>
+        <p class="section-lead">
+          お申込み特典に加えて、参加・視聴・個別相談で受け取れる特典もご用意しています。
+        </p>
+      </div>
 
-        <div class="bonus-box">
-          <div class="bonus-label">▲ 参加者限定</div>
-          <ul class="bonus-list">
-            <li>導線設計チェックリスト</li>
-            <li>自動化テンプレート</li>
-            <li>セミナー資料</li>
-            <li>アーカイブ視聴</li>
-            <li>実践ワークシート</li>
-            <li>参加者限定案内</li>
-            <li>追加プレゼント</li>
-          </ul>
+      <div class="bonus-intro-card">
+        <div class="bonus-main-label">申込みするだけで受け取れる</div>
+        <div class="bonus-main-box">
+          <div class="bonus-badge large">特典1</div>
+          <div class="bonus-main-content">
+            <h3>自動化チェックリスト♡</h3>
+            <p>お申込みいただいた方全員にプレゼント</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
 
+      <div class="bonus-subhead">さらに、参加・視聴・個別相談で受け取れる特典はこちら</div>
+
+      <div class="bonus-cards">
+        <div class="bonus-card">
+          <div class="bonus-badge">特典2</div>
+          <div class="bonus-card-body">
+            <div class="bonus-condition">DAY1・DAY2 シェア特典</div>
+            <h3>0→1達成マインドロードマップ</h3>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <div class="bonus-badge">特典3</div>
+          <div class="bonus-card-body">
+            <div class="bonus-condition">特典動画視聴でプレゼント</div>
+            <h3>自分の強みを最大に活かして初心者でもできるロードマップ</h3>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <div class="bonus-badge">特典4</div>
+          <div class="bonus-card-body">
+            <div class="bonus-condition">特典動画視聴でプレゼント</div>
+            <h3>価値観ビジョンが繋がる！本当の自分を取り戻し、自分を見つめるワーク</h3>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <div class="bonus-badge">特典5</div>
+          <div class="bonus-card-body">
+            <div class="bonus-condition">特典動画視聴でプレゼント</div>
+            <h3>自分を追求し価値観に沿った、あなたの溢れる魂からの商品設計</h3>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <div class="bonus-badge">特典6</div>
+          <div class="bonus-card-body">
+            <div class="bonus-condition">特典動画視聴でプレゼント</div>
+            <h3>愛され続ける商品で成約までの流れを作る 手放しで回る仕組み作り</h3>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <div class="bonus-badge">特典7</div>
+          <div class="bonus-card-body">
+            <div class="bonus-condition">個別相談を予約・実施した方へ</div>
+            <h3>【完全保存版】0→1から50万安定の自動化ロードマップ</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-wrap" style="margin-top:32px;">
+        <a class="btn" href="https://www.reservestock.jp/inquiry/OWFiMWE5MjUwO" target="_blank" rel="noopener noreferrer">
+          今すぐ無料で参加する
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+  
   <!-- ===== 悩み ===== -->
   <section class="section">
     <div class="wrap">
