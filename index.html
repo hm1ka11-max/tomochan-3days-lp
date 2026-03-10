@@ -397,6 +397,55 @@
       font-size:12px;
       font-weight:700;
     }
+
+    /* 7大特典 */
+    .bonus-box{
+      max-width:860px;
+      margin:0 auto;
+      background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(248,252,253,.96));
+      border:1px solid var(--line);
+      border-radius:24px;
+      box-shadow:var(--shadow);
+      padding:28px 24px;
+      position:relative;
+    }
+
+    .bonus-label{
+      display:inline-block;
+      margin-bottom:18px;
+      padding:8px 14px;
+      border-radius:999px;
+      background:linear-gradient(135deg, #f8efc8, #f4e7b0);
+      color:#7a5f10;
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:.04em;
+    }
+
+    .bonus-list{
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:grid;
+      gap:16px;
+    }
+
+    .bonus-list li{
+      position:relative;
+      padding-left:34px;
+      font-size:17px;
+      line-height:1.9;
+    }
+
+    .bonus-list li::before{
+      content:"▲";
+      position:absolute;
+      left:0;
+      top:3px;
+      color:var(--accent);
+      font-size:15px;
+      font-weight:700;
+    }    
   </style>
 </head>
 <body>
@@ -464,6 +513,34 @@
             <li>今ある商品を自然に販売</li>
           </ul>
         </article>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===== 7大特典 ===== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-inner">
+        <div class="section-head">
+          <div class="section-kicker">Bonus</div>
+          <h2 class="section-title">参加者限定 7大特典もご用意しています</h2>
+          <p class="section-lead">
+            受講後すぐに活かしやすい内容を、特典として受け取っていただけます。
+          </p>
+        </div>
+
+        <div class="bonus-box">
+          <div class="bonus-label">▲ 参加者限定</div>
+          <ul class="bonus-list">
+            <li>導線設計チェックリスト</li>
+            <li>自動化テンプレート</li>
+            <li>セミナー資料</li>
+            <li>アーカイブ視聴</li>
+            <li>実践ワークシート</li>
+            <li>参加者限定案内</li>
+            <li>追加プレゼント</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -557,24 +634,6 @@
   </div>
 </section>
 
-  <!-- ===== 7大特典 ===== -->
-  <section class="section">
-    <div class="wrap">
-      <h2 class="section-title">参加者限定 7大特典</h2>
-      <p class="section-lead">ここは実際の特典内容に差し替えてね。</p>
-
-      <div class="tokuten-grid">
-        <div class="tokuten">特典① 導線設計チェックリスト</div>
-        <div class="tokuten">特典② 自動化テンプレート</div>
-        <div class="tokuten">特典③ セミナー資料</div>
-        <div class="tokuten">特典④ アーカイブ視聴</div>
-        <div class="tokuten">特典⑤ 実践ワークシート</div>
-        <div class="tokuten">特典⑥ 参加者限定案内</div>
-        <div class="tokuten">特典⑦ 追加プレゼント</div>
-      </div>
-    </div>
-  </section>
-
   <!-- ===== 講師紹介 ===== -->
   <section class="section">
     <div class="wrap">
@@ -604,19 +663,37 @@
   <section class="section">
     <div class="wrap">
       <h2 class="section-title">講座生の声</h2>
-      <div class="voice-grid">
-        <div class="voice">
-          <div class="tag">受講者の声</div>
-          <p>「何から作ればいいかが明確になって、止まっていた手が動きました。」</p>
+      <div class="voice-list">
+        <div class="voice-card">
+          <div class="voice-image-wrap">
+            <div class="voice-image-placeholder">写真 / イラスト</div>
+          </div>
+          <div class="voice-content">
+            <div class="tag">受講者の声</div>
+            <p>「何から作ればいいかが明確になって、止まっていた手が動きました。」</p>
+          </div>
         </div>
-        <div class="voice">
-          <div class="tag">受講者の声</div>
-          <p>「LINEの設定だけじゃなく、売れる流れの考え方まで理解できました。」</p>
+
+        <div class="voice-card">
+          <div class="voice-image-wrap">
+            <div class="voice-image-placeholder">写真 / イラスト</div>
+          </div>
+          <div class="voice-content">
+            <div class="tag">受講者の声</div>
+            <p>「LINEの設定だけじゃなく、売れる流れの考え方まで理解できました。」</p>
+          </div>
         </div>
-        <div class="voice">
-          <div class="tag">受講者の声</div>
-          <p>「自動化＝難しいと思っていたけど、順番がわかると一気に現実的でした。」</p>
+
+        <div class="voice-card">
+          <div class="voice-image-wrap">
+            <div class="voice-image-placeholder">写真 / イラスト</div>
+          </div>
+          <div class="voice-content">
+            <div class="tag">受講者の声</div>
+            <p>「自動化＝難しいと思っていたけど、順番がわかると一気に現実的でした。」</p>
+          </div>
         </div>
+      </div>
       </div>
     </div>
   </section>
