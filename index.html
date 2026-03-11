@@ -973,6 +973,74 @@ serif;
 font-weight:600;
 letter-spacing:.05em;
 }
+
+    /* ===== 得られる未来 ===== */
+    .future-box{
+      max-width:860px;
+      margin:0 auto;
+      background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(248,252,253,.96));
+      border:1px solid var(--line);
+      border-radius:24px;
+      box-shadow:var(--shadow);
+      padding:28px 24px;
+    }
+
+    .future-list{
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:grid;
+      gap:16px;
+    }
+
+    .future-list li{
+      position:relative;
+      padding-left:42px;
+      font-size:17px;
+      line-height:1.9;
+      color:var(--text);
+    }
+
+    .future-list li::before{
+      content:"✓";
+      position:absolute;
+      left:0;
+      top:2px;
+      width:28px;
+      height:28px;
+      border-radius:999px;
+      background:linear-gradient(135deg,#e8f7f8,#d8f0f1);
+      border:1px solid #bfe4e6;
+      color:var(--main);
+      font-weight:700;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 4px 10px rgba(36,76,144,.08);
+    }
+
+    @media (max-width: 860px){
+      .future-box{
+        padding:22px 18px;
+      }
+
+      .future-list{
+        gap:14px;
+      }
+
+      .future-list li{
+        padding-left:38px;
+        font-size:16px;
+        line-height:1.8;
+      }
+
+      .future-list li::before{
+        width:26px;
+        height:26px;
+        font-size:15px;
+      }
+    }    
+    
   </style>
 </head>
 <body>
@@ -1163,7 +1231,34 @@ letter-spacing:.05em;
      </div>
      </div>
  </section>
+  <!-- ===== 得られる未来 ===== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-inner">
+        <div class="section-head">
+          <div class="section-kicker">Future</div>
+          <h2 class="section-title">✨得られる未来✨</h2>
+          <p class="section-lead">
+            導線が整うと、こんな変化が起こります
+          </p>
+        </div>
 
+        <div class="future-box">
+          <ul class="future-list">
+            <li>発信から申込みまでの流れがわかりやすくなる</li>
+            <li>お客様が迷わず進めるようになる</li>
+            <li>LINEやご案内の手作業が減る</li>
+            <li>毎回同じ説明をくり返さなくてよくなる</li>
+            <li>何をどの順番で整えればいいかが明確になる</li>
+            <li>時間と心にゆとりが生まれる</li>
+            <li>自分がずっと動き続けなくても、回る土台ができる</li>
+            <li>売上だけでなく、働き方そのものが軽くなる</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 <!-- ===== メッセージ ===== -->
 <section class="section">
   <div class="wrap">
