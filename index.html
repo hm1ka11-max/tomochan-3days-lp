@@ -464,206 +464,233 @@ font-family:
         max-width:180px;
       }
     }    
+/* ===== 7大特典 ===== */
+.bonus-special{
+  background:linear-gradient(180deg, #eef7fb 0%, #f8fcfe 100%);
+  padding-top:38px;
+  padding-bottom:38px;
+}
 
-    /* ===== 7大特典 ===== */
-    .bonus-special{
-      background:linear-gradient(180deg, #eef7fb 0%, #f8fcfe 100%);
-      padding-top:46px;
-      padding-bottom:46px;
-    }
+.bonus-top{
+  text-align:center;
+  margin-bottom:20px;
+}
 
-    .bonus-top{
-      text-align:center;
-      margin-bottom:26px;
-    }
+.bonus-copy-top{
+  margin:0 0 8px;
+  font-size:clamp(16px, 2vw, 20px);
+  line-height:1.7;
+  font-weight:500;
+  color:#2d3b52;
+}
 
-    .bonus-copy-top{
-      margin:18px 0 10px;
-      font-size:clamp(16px, 2vw, 22px);
-      line-height:1.6;
-      font-weight:500;
-      color:#2d3b52;
-    }
+.bonus-copy-accent{
+  color:#2f9fc4;
+  font-weight:700;
+}
 
-    .bonus-copy-accent{
-      color:#2f9fc4;
-      font-weight:700;
-    }
+.bonus-main-heading{
+  margin:0;
+  line-height:1.15;
+  font-weight:700;
+  color:var(--main);
+  letter-spacing:.01em;
+}
 
-    .bonus-main-heading{
-      margin:0;
-      line-height:1.15;
-      font-weight:700;
-      color:var(--main);
-      letter-spacing:.01em;
-    }
+.bonus-main-number{
+  font-size:clamp(54px, 8vw, 84px);
+  font-weight:700;
+  color:var(--main);
+  margin-right:4px;
+}
 
-    .bonus-main-number{
-      font-size:clamp(68px, 10vw, 110px);
-      font-weight:700;
-      color:var(--main);
-      margin-right:6px;
-    }
+.bonus-main-text{
+  font-size:clamp(30px, 4.4vw, 48px);
+  font-weight:700;
+  color:var(--main);
+}
 
-    .bonus-main-text{
-      font-size:clamp(42px, 6vw, 76px);
-      font-weight:700;
-      color:var(--main);
-    }
+.bonus-register-pill{
+  width:fit-content;
+  margin:0 auto 18px;
+  padding:10px 20px;
+  border-radius:999px;
+  background:linear-gradient(135deg, #8fdce7, #72cddc);
+  color:#1f3f78;
+  font-size:14px;
+  font-weight:700;
+  box-shadow:0 8px 18px rgba(114,205,220,.18);
+}
 
-    .bonus-register-pill{
-      width:fit-content;
-      margin:0 auto 22px;
-      padding:12px 28px;
-      border-radius:999px;
-      background:linear-gradient(135deg, #8fdce7, #72cddc);
-      color:#1f3f78;
-      font-size:clamp(14px, 1.5vw, 16px);
-      padding:10px 20px;
-      font-weight:700;
-      box-shadow:0 8px 18px rgba(114,205,220,.22);
-    }
+/* 特典1 */
+.bonus-main-panel{
+  max-width:920px;
+  margin:0 auto 22px;
+  display:grid;
+  grid-template-columns:120px 1fr;
+  gap:20px;
+  align-items:center;
+  background:#ffffff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  box-shadow:var(--shadow);
+  padding:20px 22px;
+}
 
-    .bonus-main-panel{
-      max-width:980px;
-      margin:0 auto 26px;
-      display:grid;
-      grid-template-columns:150px 1fr;
-      gap:24px;
-      align-items:center;
-      background:#ffffff;
-      border:1px solid var(--line);
-      border-radius:26px;
-      box-shadow:var(--shadow);
-      padding:28px 28px;
-    }
+.bonus-main-badge{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:86px;
+  border-radius:18px;
+  background:linear-gradient(180deg, #dbc468 0%, #bf9c36 100%);
+  color:#fff;
+  font-weight:700;
+  font-size:20px;
+  box-shadow:0 8px 16px rgba(185,147,47,.18);
+}
 
-    .bonus-main-badge,
-    .bonus-badge{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background:linear-gradient(180deg, #dbc468 0%, #bf9c36 100%);
-      color:#fff;
-      font-weight:700;
-      box-shadow:0 8px 16px rgba(185,147,47,.22);
-    }
+.bonus-panel-title{
+  margin:0 0 6px;
+  font-size:clamp(20px, 2.2vw, 28px);
+  line-height:1.35;
+  font-weight:700;
+  color:var(--main);
+}
 
-    .bonus-main-badge{
-      min-height:120px;
-      border-radius:22px;
-      font-size:clamp(20px, 2.2vw, 28px);
-    }
+.bonus-panel-text{
+  margin:0;
+  font-size:14px;
+  color:var(--muted);
+  font-weight:500;
+  line-height:1.7;
+}
 
-    .bonus-main-panel-body{
-      display:block;
-    }
+.bonus-middle-text{
+  max-width:820px;
+  margin:0 auto 16px;
+  text-align:center;
+  color:#33435c;
+  font-size:16px;
+  line-height:1.9;
+}
 
-    .bonus-panel-title{
-      margin:0 0 10px;
-      font-size:clamp(20px, 2.5vw, 28px);
-      line-height:1.25;
-      font-weight:700;
-      color:var(--main);
-    }
+.bonus-middle-text p{
+  margin:0;
+}
 
-    .bonus-panel-text{
-      margin:0;
-      font-size:clamp(14px, 1.6vw, 16px);
-      color:var(--muted);
-      font-weight:500;
-      line-height:1.7;
-    }
+.bonus-arrow-text{
+  width:180px;
+  height:88px;
+  margin:0 auto 18px;
+  padding-top:16px;
+  color:var(--main);
+  font-size:18px;
+  font-weight:700;
+  text-align:center;
+  background:linear-gradient(180deg, #dff4f7 0%, #cbeef2 100%);
+  clip-path:polygon(0 0, 100% 0, 50% 100%);
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+}
 
-    .bonus-middle-text{
-      max-width:860px;
-      margin:0 auto 18px;
-      text-align:center;
-      color:#33435c;
-      font-size:clamp(17px, 2vw, 25px);
-      line-height:1.9;
-    }
+.bonus-participate-pill{
+  width:fit-content;
+  margin:0 auto 22px;
+  padding:12px 24px;
+  border-radius:999px;
+  background:linear-gradient(135deg, #8fdce7, #72cddc);
+  color:#1f3f78;
+  font-size:18px;
+  font-weight:700;
+  box-shadow:0 8px 18px rgba(114,205,220,.18);
+  text-align:center;
+}
 
-    .bonus-middle-text p{
-      margin:0;
-    }
+.bonus-cards{
+  display:grid;
+  gap:16px;
+}
 
-    .bonus-arrow-text{
-      width:fit-content;
-      margin:0 auto 22px;
-      padding:14px 30px 10px;
-      color:var(--main);
-      font-size:clamp(17px, 2vw, 26px);
-      font-weight:700;
-      line-height:1;
-      position:relative;
-      background:linear-gradient(180deg, #dff4f7 0%, #cbeef2 100%);
-      clip-path:polygon(0 0, 100% 0, 50% 100%);
-    }
+/* 特典2〜7 */
+.bonus-card{
+  display:grid;
+  grid-template-columns:120px 1fr;
+  gap:20px;
+  align-items:center;
+  background:#ffffff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  box-shadow:var(--shadow);
+  padding:18px 20px;
+}
 
-    .bonus-participate-pill{
-      width:fit-content;
-      margin:0 auto 26px;
-      padding:16px 34px;
-      border-radius:999px;
-      background:linear-gradient(135deg, #8fdce7, #72cddc);
-      color:#1f3f78;
-      font-size:clamp(20px, 2.4vw, 34px);
-      font-weight:700;
-      box-shadow:0 8px 18px rgba(114,205,220,.22);
-      text-align:center;
-    }
+.bonus-badge{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:86px;
+  border-radius:18px;
+  background:linear-gradient(180deg, #dbc468 0%, #bf9c36 100%);
+  color:#fff;
+  font-weight:700;
+  font-size:20px;
+  box-shadow:0 8px 16px rgba(185,147,47,.18);
+}
 
-    .bonus-cards{
-      display:grid;
-      gap:18px;
-    }
+.bonus-card-body{
+  display:block;
+  min-width:0;
+}
 
-    .bonus-card{
-      display:grid;
-      grid-template-columns:150px 1fr;
-      gap:22px;
-      align-items:center;
-      background:#ffffff;
-      border:1px solid var(--line);
-      border-radius:24px;
-      box-shadow:var(--shadow);
-      padding:24px 24px;
-    }
+.bonus-condition{
+  display:inline-block;
+  margin-bottom:8px;
+  padding:6px 12px;
+  border-radius:999px;
+  background:#eef6fb;
+  border:1px solid #d7e8f2;
+  color:var(--main);
+  font-size:13px;
+  font-weight:600;
+  line-height:1.5;
+}
 
-    .bonus-badge{
-      min-height:112px;
-      border-radius:20px;
-      font-size:clamp(26px, 2.8vw, 40px);
-    }
+.bonus-card-title{
+  margin:0;
+  color:var(--main);
+  font-size:clamp(20px, 2.2vw, 28px);
+  line-height:1.5;
+  font-weight:700;
+  letter-spacing:.01em;
+  word-break:keep-all;
+}
 
-    .bonus-card-body{
-      display:block;
-    }
-
-    .bonus-condition{
-      display:inline-block;
-      margin-bottom:10px;
-      padding:8px 16px;
-      border-radius:999px;
-      background:#eef6fb;
-      border:1px solid #d7e8f2;
-      color:var(--main);
-      font-size:clamp(15px, 1.5vw, 22px);
-      font-weight:600;
-      line-height:1.5;
-    }
-
-    .bonus-card-title{
-      margin:0;
-      color:var(--main);
-      font-size:clamp(20px, 2.4vw, 28px);
-      line-height:1.45;
-      font-weight:700;
-      letter-spacing:.01em;
-    }
-
+/* スマホ */
 @media (max-width: 860px){
+  .bonus-special{
+    padding-top:28px;
+    padding-bottom:28px;
+  }
+
+  .bonus-copy-top{
+    font-size:18px;
+  }
+
+  .bonus-main-number{
+    font-size:48px;
+  }
+
+  .bonus-main-text{
+    font-size:26px;
+  }
+
+  .bonus-register-pill{
+    font-size:14px;
+    padding:10px 18px;
+  }
+
   .bonus-main-panel,
   .bonus-card{
     grid-template-columns:1fr;
@@ -678,21 +705,14 @@ font-family:
     border-radius:14px;
   }
 
-  .bonus-main-number{
-    font-size:48px;
-  }
-
-  .bonus-main-text{
-    font-size:26px;
-  }
-
-  .bonus-panel-title{
-    font-size:22px;
-  }
-
+  .bonus-panel-title,
   .bonus-card-title{
     font-size:18px;
     line-height:1.5;
+  }
+
+  .bonus-panel-text{
+    font-size:14px;
   }
 
   .bonus-condition{
@@ -700,26 +720,22 @@ font-family:
     padding:6px 12px;
   }
 
-  .bonus-copy-top{
-    font-size:18px;
-  }
-
   .bonus-middle-text{
     font-size:15px;
   }
-}
-    
-h1,h2,h3,
-.bonus-main-heading,
-.bonus-card-title,
-.bonus-panel-title{
-font-family:
-"Hiragino Mincho ProN",
-"Yu Mincho",
-"Noto Serif JP",
-serif;
-font-weight:600;
-letter-spacing:.05em;
+
+  .bonus-arrow-text{
+    width:150px;
+    height:76px;
+    font-size:16px;
+    padding-top:12px;
+  }
+
+  .bonus-participate-pill{
+    font-size:16px;
+    padding:10px 18px;
+    line-height:1.5;
+  }
 }
 
     /* ===== 得られる未来 ===== */
@@ -1004,98 +1020,105 @@ box-shadow:0 10px 24px rgba(0,0,0,0.16);
     </div>
   </section>
   
-  <!-- ===== 7大特典 ===== -->
-  <section class="section">
-    <div class="wrap">
-      <div class="section-inner bonus-special">
-        <div class="bonus-top">
-          <div class="section-kicker">Special Bonus</div>
+<!-- ===== 7大特典 ===== -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-inner bonus-special">
 
-          <p class="bonus-copy-top">
-            「参加する」ボタンから<span class="bonus-copy-accent">無料登録</span>いただくと
-          </p>
+      <div class="bonus-top">
+        <p class="bonus-copy-top">
+          「参加する」ボタンから<span class="bonus-copy-accent">無料登録</span>いただくと
+        </p>
 
-          <h2 class="bonus-main-heading">
-            <span class="bonus-main-number">7</span><span class="bonus-main-text">大特典プレゼント！</span>
-          </h2>
-        </div>
+        <h2 class="bonus-main-heading">
+          <span class="bonus-main-number">7</span>
+          <span class="bonus-main-text">大特典プレゼント！</span>
+        </h2>
+      </div>
 
-        <div class="bonus-register-pill">登録しただけで♡</div>
+      <div class="bonus-register-pill">登録しただけで♡</div>
 
-        <div class="bonus-main-panel">
-          <div class="bonus-main-badge">特典1</div>
-          <div class="bonus-main-panel-body">
-            <h3 class="bonus-panel-title">自動化チェックリスト</h3>
-            <p class="bonus-panel-text">お申込みいただいた方全員にプレゼント</p>
-          </div>
-        </div>
-
-        <div class="bonus-middle-text">
-          <p>お申込み特典に加えて、参加・視聴・個別相談で受け取れる特典もご用意しています。</p>
-        </div>
-
-        <div class="bonus-arrow-text">さらに！</div>
-
-        <div class="bonus-participate-pill">セミナー参加でプラス6大特典</div>
-
-        <div class="bonus-cards">
-          <div class="bonus-card">
-            <div class="bonus-badge">特典2</div>
-            <div class="bonus-card-body">
-              <div class="bonus-condition">＼ DAY1・DAY2リアルタイム参加で ／</div>
-              <h3 class="bonus-card-title">0→1達成マインドロードマップ</h3>
-            </div>
-          </div>
-
-          <div class="bonus-card">
-            <div class="bonus-badge">特典3</div>
-            <div class="bonus-card-body">
-              <div class="bonus-condition">＼ 特典動画視聴でプレゼント ／</div>
-              <h3 class="bonus-card-title">自分の強みを最大に活かして<br>初心者でも出来るロードマップ</h3>
-            </div>
-          </div>
-
-          <div class="bonus-card">
-            <div class="bonus-badge">特典4</div>
-            <div class="bonus-card-body">
-              <div class="bonus-condition">＼ 特典動画視聴でプレゼント ／</div>
-              <h3 class="bonus-card-title">価値観ビジョンが繋がる！<br>本当の自分を取り戻し 自分を見つめるワーク</h3>
-            </div>
-          </div>
-
-          <div class="bonus-card">
-            <div class="bonus-badge">特典5</div>
-            <div class="bonus-card-body">
-              <div class="bonus-condition">＼ 特典動画視聴でプレゼント ／</div>
-              <h3 class="bonus-card-title">自分を追求し価値観に沿った<br>あなたの溢れる魂からの商品設計</h3>
-            </div>
-          </div>
-
-          <div class="bonus-card">
-            <div class="bonus-badge">特典6</div>
-            <div class="bonus-card-body">
-              <div class="bonus-condition">＼ 特典動画視聴でプレゼント ／</div>
-              <h3 class="bonus-card-title">愛され続ける商品で成約までの流れを作る<br>手放しで回る仕組み作り</h3>
-            </div>
-          </div>
-
-          <div class="bonus-card">
-            <div class="bonus-badge">特典7</div>
-            <div class="bonus-card-body">
-              <div class="bonus-condition">＼ 個別相談を予約・実施した方へ ／</div>
-              <h3 class="bonus-card-title">【完全保存版】0→1から50万安定の<br>自動化ロードマップ</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="btn-wrap" style="margin-top:32px;">
-          <a class="btn" href="https://www.reservestock.jp/inquiry/OWFiMWE5MjUwO" target="_blank" rel="noopener noreferrer">
-            ▶︎受け取りはこちら
-          </a>
+      <!-- 特典1 -->
+      <div class="bonus-main-panel">
+        <div class="bonus-main-badge">特典1</div>
+        <div class="bonus-main-panel-body">
+          <h3 class="bonus-panel-title">自動化チェックリスト</h3>
+          <p class="bonus-panel-text">お申込みいただいた方全員にプレゼント</p>
         </div>
       </div>
+
+      <div class="bonus-middle-text">
+        <p>
+          お申込み特典に加えて、参加・視聴・個別相談で受け取れる特典もご用意しています。
+        </p>
+      </div>
+
+      <div class="bonus-arrow-text">さらに！</div>
+
+      <div class="bonus-participate-pill">セミナー参加でプラス6大特典</div>
+
+      <!-- 特典2〜7 -->
+      <div class="bonus-cards">
+
+        <div class="bonus-card">
+          <div class="bonus-badge">特典2</div>
+          <div class="bonus-card-body">
+            <div class="bonus-condition">DAY1・DAY2リアルタイム参加で</div>
+            <h3 class="bonus-card-title">0→1達成マインドロードマップ</h3>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <div class="bonus-badge">特典3</div>
+          <div class="bonus-card-body">
+            <div class="bonus-condition">特典動画視聴でプレゼント</div>
+            <h3 class="bonus-card-title">自分の強みを最大に活かして<br>初心者でも出来るロードマップ</h3>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <div class="bonus-badge">特典4</div>
+          <div class="bonus-card-body">
+            <div class="bonus-condition">特典動画視聴でプレゼント</div>
+            <h3 class="bonus-card-title">価値観ビジョンが繋がる！<br>本当の自分を取り戻し 自分を見つめるワーク</h3>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <div class="bonus-badge">特典5</div>
+          <div class="bonus-card-body">
+            <div class="bonus-condition">特典動画視聴でプレゼント</div>
+            <h3 class="bonus-card-title">自分を追求し価値観に沿った<br>あなたの溢れる魂からの商品設計</h3>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <div class="bonus-badge">特典6</div>
+          <div class="bonus-card-body">
+            <div class="bonus-condition">特典動画視聴でプレゼント</div>
+            <h3 class="bonus-card-title">愛され続ける商品で成約までの流れを作る<br>手放しで回る仕組み作り</h3>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <div class="bonus-badge">特典7</div>
+          <div class="bonus-card-body">
+            <div class="bonus-condition">個別相談を予約・実施した方へ</div>
+            <h3 class="bonus-card-title">【完全保存版】0→1から50万安定の<br>自動化ロードマップ</h3>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="btn-wrap" style="margin-top:32px; text-align:center;">
+        <a class="btn" href="https://www.reservestock.jp/inquiry/OWFiMWE5MjUwO" target="_blank" rel="noopener noreferrer">
+          ▶︎受け取りはこちら
+        </a>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
   
   <!-- ===== 悩み ===== -->
   <section class="section">
