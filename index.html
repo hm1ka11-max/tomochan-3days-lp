@@ -246,7 +246,7 @@ font-family:
       display:grid;
       grid-template-columns:240px 1fr;
       gap:26px;
-      align-items:start;
+      align-items:center;
     }
 
  .profile-image{
@@ -255,8 +255,8 @@ font-family:
  }
 
  .profile-image img{
-   width:180px;
-   height:180px;
+   width:220px;
+   height:220px;
    border-radius:50%;
    object-fit:cover;
    box-shadow:var(--shadow);
@@ -323,8 +323,8 @@ font-family:
       }
 
       .profile-image img{
-        width:140px;
-        height:140px;
+        width:150px;
+        height:150px;
       }
       .hero-visual img{
         max-width:100%;
@@ -411,281 +411,7 @@ font-family:
       color:var(--main);
       font-size:12px;
       font-weight:700;
-    }
-
-    /* ===== 7大特典 ===== */
-    .bonus-special{
-      background:linear-gradient(180deg, #eef7fb 0%, #f8fcfe 100%);
-      padding-top:38px;
-      padding-bottom:38px;
-    }
-
-    .bonus-top{
-      text-align:center;
-      margin-bottom:22px;
-    }
-
-    .bonus-copy-top{
-      margin:16px 0 8px;
-      font-size:clamp(16px, 2vw, 22px);
-      line-height:1.7;
-      font-weight:500;
-      color:#2d3b52;
-    }
-
-    .bonus-copy-accent{
-      color:#2f9fc4;
-      font-weight:700;
-    }
-
-    .bonus-main-heading{
-      margin:0;
-      line-height:1.15;
-      font-weight:700;
-      color:var(--main);
-      letter-spacing:.01em;
-    }
-
-    .bonus-main-number{
-      font-size:clamp(56px, 8vw, 86px);
-      font-weight:700;
-      color:var(--main);
-      margin-right:4px;
-    }
-
-    .bonus-main-text{
-      font-size:clamp(34px, 4.6vw, 54px);
-      font-weight:700;
-      color:var(--main);
-    }
-
-    .bonus-register-pill{
-      width:fit-content;
-      margin:0 auto 20px;
-      padding:10px 22px;
-      border-radius:999px;
-      background:linear-gradient(135deg, #8fdce7, #72cddc);
-      color:#1f3f78;
-      font-size:clamp(14px, 1.6vw, 16px);
-      font-weight:700;
-      box-shadow:0 8px 18px rgba(114,205,220,.18);
-    }
-
-    /* 特典1 */
-    .bonus-main-panel{
-      max-width:920px;
-      margin:0 auto 22px;
-      display:grid;
-      grid-template-columns:120px 1fr;
-      gap:20px;
-      align-items:center;
-      background:#ffffff;
-      border:1px solid var(--line);
-      border-radius:24px;
-      box-shadow:var(--shadow);
-      padding:20px 22px;
-    }
-
-    .bonus-main-badge{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      min-height:88px;
-      border-radius:18px;
-      background:linear-gradient(180deg, #dbc468 0%, #bf9c36 100%);
-      color:#fff;
-      font-weight:700;
-      font-size:clamp(18px, 2vw, 24px);
-      box-shadow:0 8px 16px rgba(185,147,47,.18);
-    }
-
-    .bonus-main-panel-body{
-      display:block;
-    }
-
-    .bonus-panel-title{
-      margin:0 0 6px;
-      font-size:clamp(20px, 2.2vw, 28px);
-      line-height:1.35;
-      font-weight:700;
-      color:var(--main);
-    }
-
-    .bonus-panel-text{
-      margin:0;
-      font-size:clamp(13px, 1.4vw, 16px);
-      color:var(--muted);
-      font-weight:500;
-      line-height:1.7;
-    }
-
-    .bonus-middle-text{
-      max-width:820px;
-      margin:0 auto 14px;
-      text-align:center;
-      color:#33435c;
-      font-size:clamp(14px, 1.6vw, 17px);
-      line-height:1.9;
-    }
-
-    .bonus-middle-text p{
-      margin:0;
-    }
-
-    /* さらに！ */
-    .bonus-arrow-text{
-      width:180px;
-      height:92px;
-      margin:0 auto 20px;
-      padding-top:18px;
-      color:var(--main);
-      font-size:20px;
-      font-weight:700;
-      line-height:1;
-      text-align:center;
-      background:linear-gradient(180deg, #dff4f7 0%, #cbeef2 100%);
-      clip-path:polygon(0 0, 100% 0, 50% 100%);
-      display:flex;
-      align-items:flex-start;
-      justify-content:center;
-    }
-
-    .bonus-participate-pill{
-      width:fit-content;
-      margin:0 auto 22px;
-      padding:12px 28px;
-      border-radius:999px;
-      background:linear-gradient(135deg, #8fdce7, #72cddc);
-      color:#1f3f78;
-      font-size:clamp(18px, 2vw, 24px);
-      font-weight:700;
-      box-shadow:0 8px 18px rgba(114,205,220,.18);
-      text-align:center;
-    }
-
-    .bonus-cards{
-      display:grid;
-      gap:16px;
-    }
-
-    /* 特典2以降 */
-    .bonus-card{
-      display:grid;
-      grid-template-columns:120px 1fr;
-      gap:20px;
-      align-items:center;
-      background:#ffffff;
-      border:1px solid var(--line);
-      border-radius:22px;
-      box-shadow:var(--shadow);
-      padding:18px 20px;
-    }
-
-    .bonus-badge{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      min-height:86px;
-      border-radius:18px;
-      background:linear-gradient(180deg, #dbc468 0%, #bf9c36 100%);
-      color:#fff;
-      font-weight:700;
-      font-size:clamp(18px, 2vw, 24px);
-      box-shadow:0 8px 16px rgba(185,147,47,.18);
-    }
-
-    .bonus-card-body{
-      display:block;
-      min-width:0;
-    }
-
-    .bonus-condition{
-      display:inline-block;
-      margin-bottom:8px;
-      padding:6px 14px;
-      border-radius:999px;
-      background:#eef6fb;
-      border:1px solid #d7e8f2;
-      color:var(--main);
-      font-size:clamp(12px, 1.2vw, 14px);
-      font-weight:600;
-      line-height:1.5;
-    }
-
-    .bonus-card-title{
-      margin:0;
-      color:var(--main);
-      font-size:clamp(20px, 2.2vw, 28px);
-      line-height:1.5;
-      font-weight:700;
-      letter-spacing:.01em;
-    }
-
-    @media (max-width: 860px){
-      .bonus-main-number{
-        font-size:52px;
-      }
-
-      .bonus-main-text{
-        font-size:32px;
-      }
-
-      .bonus-main-panel,
-      .bonus-card{
-        grid-template-columns:86px 1fr;
-        gap:14px;
-        padding:14px 14px;
-        align-items:start;
-      }
-
-      .bonus-main-badge,
-      .bonus-badge{
-        min-height:72px;
-        border-radius:16px;
-        font-size:16px;
-      }
-
-      .bonus-panel-title,
-      .bonus-card-title{
-        font-size:18px;
-        line-height:1.45;
-      }
-
-      .bonus-panel-text{
-        font-size:13px;
-      }
-
-      .bonus-condition{
-        font-size:11px;
-        padding:5px 10px;
-        margin-bottom:6px;
-      }
-
-      .bonus-register-pill{
-        font-size:14px;
-      }
-
-      .bonus-participate-pill{
-        font-size:16px;
-        padding:10px 18px;
-      }
-
-      .bonus-arrow-text{
-        width:150px;
-        height:78px;
-        font-size:18px;
-        padding-top:14px;
-      }
-    }
-    .bonus-list li::before{
-      content:"▲";
-      position:absolute;
-      left:0;
-      top:3px;
-      color:var(--accent);
-      font-size:15px;
-      font-weight:700;
-    }    
+    }  
 
     /* 講座生の声 */
     .voice-list{
@@ -1416,31 +1142,48 @@ box-shadow:0 10px 24px rgba(0,0,0,0.16);
   </div>
 </section>
   
-  <!-- ===== 講師紹介 ===== -->
-  <section class="section">
-    <div class="wrap">
-      <h2 class="section-title">講師紹介</h2>
+<!-- ===== 講師紹介 ===== -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2 class="section-title">講師紹介</h2>
+      </div>
+
       <div class="card profile">
         <div class="profile-image">
-          <img src="tomochan-profile.jpg" alt="講師 植田友美さんのプロフィール写真">
+          <img src="tomochan-profile.jpg" alt="講師 植田カエラ友美さんのプロフィール写真">
         </div>
+
         <div class="profile-text">
           <h3>植田カエラ友美</h3>
-          <div class="sub-title">プロライン認定コンサルタント｜仕組み化プロデューサー｜起業コンサルタント</div>
+          <div class="sub-title">
+            プロライン認定コンサルタント｜株式会社リバティ 代表取締役｜SELFLOVEビジネススクール8・9期ゴールド講師
+          </div>
+
           <p>
-            LINE導線設計・自動化・仕組み化を通して、
-            起業家が「頑張り続けなくても回る流れ」をつくるサポートを行う。
+            商品構築からLINE自動化構築までをサポート。<br>
+            シングルマザー3姉妹ママとして、ビジネスと人生の両立を実践しながら、
+            「お金と時間と心の豊かさ」を届ける活動を行っています。
           </p>
+
           <ul class="list">
-            <li>LINE導線設計サポート</li>
-            <li>プロライン構築サポート</li>
-            <li>起業・仕組み化コンサルティング</li>
+            <li>2002年：グラフィックデザイナーとして独立。HP制作・看板制作などを手がける</li>
+            <li>2007年：MLMビジネスをスタート</li>
+            <li>2010年：年収400万円達成（MLM）／10年間毎年海外インセンティブ旅行達成</li>
+            <li>2017年：年収1000万円近くの収入へ</li>
+            <li>2023年1月：起業コンサル開始</li>
+            <li>2024年7月：プロライン認定コンサルタント 月商137万円達成</li>
+            <li>2024年：年商8桁達成</li>
+            <li>2025年7月：法人成り</li>
+            <li>2025年12月：コンサル実績700人以上、満足度100％</li>
           </ul>
         </div>
       </div>
     </div>
-  </section>
-
+  </div>
+</section>
+  
   <!-- ===== 講座生の声 ===== -->
   <section class="section">
     <div class="wrap">
