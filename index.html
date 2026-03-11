@@ -1048,20 +1048,50 @@ letter-spacing:.05em;
 }
 
 .trouble-message{
-text-align:center;
-margin-top:28px;
-font-size:16px;
-color:var(--subtext);
+  text-align:center;
+  margin-top:28px;
+  margin-bottom:0;
+  font-size:16px;
+  color:var(--text);
+  line-height:1.9;
+}
+
+.trouble-message span{
+  display:inline-block;
 }
 
 .next-arrow{
-width:0;
-height:0;
-margin:18px auto 0;
-border-left:22px solid transparent;
-border-right:22px solid transparent;
-border-top:26px solid #cfe7ee;
-}    
+  width:0;
+  height:0;
+  margin:0 auto;
+  border-left:30px solid transparent;
+  border-right:30px solid transparent;
+  border-top:34px solid #cfe7ee;
+}
+
+.outside-arrow{
+  margin-top:-4px;
+  margin-bottom:34px;
+}
+
+@media (max-width: 860px){
+  .trouble-message{
+    font-size:15px;
+    line-height:1.9;
+    padding:0 12px;
+  }
+
+  .next-arrow{
+    border-left:26px solid transparent;
+    border-right:26px solid transparent;
+    border-top:30px solid #cfe7ee;
+  }
+
+  .outside-arrow{
+    margin-top:4px;
+    margin-bottom:28px;
+  }
+} 
   
   </style>
 </head>
@@ -1244,17 +1274,19 @@ border-top:26px solid #cfe7ee;
             <li>忙しいのに、なぜか売上や成約につながりきらない</li>
             <li>自分の時間がどんどんなくなっている</li>
             <li>お客様対応に追われて、本当にやりたいことに集中できない</li>
-      </ul>
+</ul>
 
-       <p class="trouble-message">
-       ひとつでも当てはまる方は、この3Daysがヒントになるかもしれません。
-       </p>
+<p class="trouble-message">
+  <span>ひとつでも当てはまる方は、</span><br>
+  <span>この3Daysがヒントになるかもしれません。</span>
+</p>
 
-        <div class="next-arrow"></div>     
      </div>
-     </div>
-     </div>
- </section>
+</div>
+</div>
+</section>
+
+<div class="next-arrow outside-arrow"></div>
   <!-- ===== 得られる未来 ===== -->
 <div class="section-head">
 
