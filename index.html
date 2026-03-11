@@ -948,6 +948,111 @@ box-shadow:0 10px 24px rgba(0,0,0,0.16);
   font-size:26px;
   margin-bottom:6px;
 }
+
+    /* ===== 女性向けに寄せる微調整 ===== */
+
+body{
+  background:
+    radial-gradient(circle at top, #f9fdff 0%, #eef7fb 42%, #edf4f8 100%);
+}
+
+.section-inner,
+.card,
+.future-box,
+.trouble-box,
+.message-box,
+.bonus-main-panel,
+.bonus-card,
+.voice-card,
+.faq-item,
+.day-card{
+  border-radius:28px;
+  box-shadow:0 10px 24px rgba(36,76,144,.08);
+}
+
+.section-title{
+  position:relative;
+  display:inline-block;
+  padding-bottom:10px;
+}
+
+.section-head{
+  text-align:center;
+}
+
+.section-title::after{
+  content:"";
+  display:block;
+  width:64px;
+  height:3px;
+  margin:10px auto 0;
+  border-radius:999px;
+  background:linear-gradient(135deg, #8fdce7, #d7b458);
+  opacity:.9;
+}
+
+.section-mini,
+.section-lead,
+.hero-note,
+.bonus-panel-text,
+.bonus-middle-text,
+.effect-message{
+  color:#52627b;
+}
+
+.btn{
+  border-radius:999px;
+  box-shadow:0 10px 20px rgba(215,180,88,.22);
+}
+
+.btn:hover{
+  transform:translateY(-1px);
+}
+
+.profile-image img,
+.teacher-photo{
+  box-shadow:0 12px 24px rgba(36,76,144,.10);
+  border:5px solid rgba(255,255,255,.95);
+}
+
+.tag,
+.bonus-condition,
+.day-label{
+  letter-spacing:.03em;
+}
+
+.voice-image-placeholder{
+  border-radius:22px;
+  background:linear-gradient(180deg, #f9fcfe, #edf6fa);
+}
+
+/* セクション間の抜け感 */
+.section{
+  padding:72px 0;
+}
+
+@media (max-width: 860px){
+  .section{
+    padding:48px 0;
+  }
+
+  .section-inner,
+  .card,
+  .future-box,
+  .trouble-box,
+  .message-box,
+  .bonus-main-panel,
+  .bonus-card,
+  .voice-card,
+  .faq-item,
+  .day-card{
+    border-radius:22px;
+  }
+
+  .section-title::after{
+    width:52px;
+  }
+}
     
   </style>
 </head>
