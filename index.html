@@ -464,6 +464,7 @@ font-family:
         max-width:180px;
       }
     }    
+    
 /* ===== 7大特典 ===== */
 .bonus-special{
   background:linear-gradient(180deg, #eef7fb 0%, #f8fcfe 100%);
@@ -473,13 +474,13 @@ font-family:
 
 .bonus-top{
   text-align:center;
-  margin-bottom:20px;
+  margin-bottom:30px;
 }
 
 .bonus-copy-top{
-  margin:0 0 10px;
-  font-size:clamp(15px, 1.8vw, 20px);
-  line-height:1.5;
+  margin:0 0 14px;
+  font-size:clamp(18px, 2.2vw, 24px);
+  line-height:1.6;
   font-weight:500;
   color:#2d3b52;
   white-space:nowrap;
@@ -499,9 +500,25 @@ font-family:
 }
 
 .bonus-main-heading-soft{
+  position:relative;
+  display:inline-block;
+  padding-bottom:16px;
   font-size:clamp(26px, 4vw, 40px);
   line-height:1.35;
   letter-spacing:.02em;
+}
+
+.bonus-main-heading-soft::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:0;
+  transform:translateX(-50%);
+  width:min(92%, 520px);
+  height:4px;
+  border-radius:999px;
+  background:linear-gradient(135deg, #8fdce7, #d7b458);
+  opacity:.95;
 }
 
 .bonus-heading-label{
@@ -525,12 +542,12 @@ font-family:
 
 .bonus-register-pill{
   width:fit-content;
-  margin:0 auto 18px;
-  padding:10px 20px;
+  margin:28px auto 24px;
+  padding:12px 24px;
   border-radius:999px;
   background:linear-gradient(135deg, #8fdce7, #72cddc);
   color:#1f3f78;
-  font-size:14px;
+  font-size:16px;
   font-weight:700;
   box-shadow:0 8px 18px rgba(114,205,220,.18);
 }
@@ -549,9 +566,10 @@ font-family:
   box-shadow:var(--shadow);
   padding:20px 22px;
 }
-    .bonus-main-panel-body{
-      min-width:0;
-    }
+
+.bonus-main-panel-body{
+  min-width:0;
+}
 
 .bonus-main-badge,
 .bonus-badge{
@@ -571,7 +589,7 @@ font-family:
 }
 
 .bonus-panel-title{
-  margin:0 0 6px;
+  margin:0 0 12px;
   font-size:clamp(20px, 2.2vw, 28px);
   line-height:1.35;
   font-weight:700;
@@ -579,11 +597,16 @@ font-family:
 }
 
 .bonus-panel-text{
+  display:inline-block;
   margin:0;
-  font-size:14px;
-  color:var(--muted);
-  font-weight:500;
-  line-height:1.7;
+  padding:6px 12px;
+  border-radius:999px;
+  background:#eef6fb;
+  border:1px solid #d7e8f2;
+  color:var(--main);
+  font-size:13px;
+  font-weight:600;
+  line-height:1.5;
 }
 
 .bonus-middle-text{
@@ -682,23 +705,20 @@ font-family:
     padding-bottom:28px;
   }
 
-  .bonus-copy-top{
-    font-size:11px;
-    line-height:1.4;
-    letter-spacing:-0.04em;
-    white-space:nowrap;
-  }
-  
-  .bonus-main-number{
-    font-size:48px;
+  .bonus-top{
+    margin-bottom:22px;
   }
 
-  .bonus-main-text{
-    font-size:26px;
+  .bonus-copy-top{
+    font-size:15px;
+    line-height:1.6;
+    letter-spacing:-0.01em;
+    white-space:normal;
   }
 
   .bonus-register-pill{
-    font-size:14px;
+    margin:24px auto 22px;
+    font-size:16px;
     padding:10px 18px;
   }
 
@@ -726,7 +746,8 @@ font-family:
   }
 
   .bonus-panel-text{
-    font-size:14px;
+    font-size:13px;
+    padding:6px 12px;
   }
 
   .bonus-condition{
@@ -750,12 +771,17 @@ font-family:
     padding:10px 18px;
     line-height:1.5;
   }
-  
+
   .bonus-main-heading-soft{
     font-size:32px;
     line-height:1.35;
+    padding-bottom:14px;
   }
-  
+
+  .bonus-main-heading-soft::after{
+    width:92%;
+    height:3px;
+  }
 }
 
     /* ===== 得られる未来 ===== */
@@ -1204,7 +1230,6 @@ body{
           7大特典プレゼント
         </h2>
       </div>
-    </div>
       
       <div class="bonus-register-pill">登録だけでもらえる♡</div>
 
