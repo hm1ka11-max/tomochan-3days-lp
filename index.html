@@ -477,11 +477,12 @@ font-family:
 }
 
 .bonus-copy-top{
-  margin:0 0 8px;
-  font-size:clamp(16px, 2vw, 20px);
-  line-height:1.7;
+  margin:0 0 10px;
+  font-size:clamp(15px, 1.8vw, 20px);
+  line-height:1.5;
   font-weight:500;
   color:#2d3b52;
+  white-space:nowrap;
 }
 
 .bonus-copy-accent{
@@ -491,23 +492,33 @@ font-family:
 
 .bonus-main-heading{
   margin:0;
-  line-height:1.15;
+  line-height:1.4;
   font-weight:700;
   color:var(--main);
-  letter-spacing:.01em;
+  letter-spacing:.03em;
 }
 
-.bonus-main-number{
-  font-size:clamp(54px, 8vw, 84px);
-  font-weight:700;
-  color:var(--main);
-  margin-right:4px;
+.bonus-main-heading-soft{
+  font-size:clamp(28px, 4.2vw, 42px);
 }
 
-.bonus-main-text{
-  font-size:clamp(30px, 4.4vw, 48px);
+.bonus-heading-label{
+  display:inline-block;
+  margin:0 auto 10px;
+  padding:6px 14px;
+  border-radius:999px;
+  background:linear-gradient(135deg, #f3e7bc, #e7d28d);
+  color:#8a6a16;
+  font-size:12px;
   font-weight:700;
-  color:var(--main);
+  letter-spacing:.12em;
+}
+
+.bonus-heading-sub{
+  margin:10px 0 0;
+  font-size:15px;
+  line-height:1.8;
+  color:#5c6c82;
 }
 
 .bonus-register-pill{
@@ -537,12 +548,15 @@ font-family:
   padding:20px 22px;
 }
 
-.bonus-main-badge{
-  display:flex;
+.bonus-main-badge,
+.bonus-badge{
+  display:inline-flex;
   align-items:center;
   justify-content:center;
-  min-height:86px;
-  border-radius:18px;
+  width:160px;
+  min-height:56px;
+  padding:0 18px;
+  border-radius:16px;
   background:linear-gradient(180deg, #dbc468 0%, #bf9c36 100%);
   color:#fff;
   font-weight:700;
@@ -626,19 +640,6 @@ font-family:
   padding:18px 20px;
 }
 
-.bonus-badge{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  min-height:86px;
-  border-radius:18px;
-  background:linear-gradient(180deg, #dbc468 0%, #bf9c36 100%);
-  color:#fff;
-  font-weight:700;
-  font-size:20px;
-  box-shadow:0 8px 16px rgba(185,147,47,.18);
-}
-
 .bonus-card-body{
   display:block;
   min-width:0;
@@ -664,11 +665,23 @@ font-family:
   line-height:1.5;
   font-weight:700;
   letter-spacing:.01em;
-  word-break:keep-all;
+  word-break:normal;
+  overflow-wrap:anywhere;
 }
 
 /* スマホ */
 @media (max-width: 860px){
+  .bonus-copy-top{
+    font-size:12px;
+    letter-spacing:-0.02em;
+    white-space:nowrap;
+  }
+
+  .bonus-heading-sub{
+    font-size:13px;
+    line-height:1.7;
+  }
+  
   .bonus-special{
     padding-top:28px;
     padding-bottom:28px;
@@ -693,22 +706,24 @@ font-family:
 
   .bonus-main-panel,
   .bonus-card{
-    grid-template-columns:1fr;
+    justify-items:start;
     gap:12px;
     padding:16px 16px;
   }
 
   .bonus-main-badge,
   .bonus-badge{
-    min-height:60px;
-    font-size:18px;
+    width:132px;
+    min-height:50px;
+    padding:0 14px;
+    font-size:17px;
     border-radius:14px;
   }
 
   .bonus-panel-title,
   .bonus-card-title{
-    font-size:18px;
-    line-height:1.5;
+    font-size:16px;
+    line-height:1.65;
   }
 
   .bonus-panel-text{
@@ -1175,18 +1190,22 @@ body{
   <div class="wrap">
     <div class="section-inner bonus-special">
 
-      <div class="bonus-top">
-        <p class="bonus-copy-top">
-          「参加する」ボタンから
-          <span class="bonus-copy-accent">無料登録</span>いただくと
-        </p>
+<div class="bonus-top">
+  <p class="bonus-copy-top">
+    「参加する」ボタンから<span class="bonus-copy-accent">無料登録</span>いただくと
+  </p>
 
-        <h2 class="bonus-main-heading">
-          <span class="bonus-main-number">7</span>
-          <span class="bonus-main-text">大特典プレゼント！</span>
-        </h2>
-      </div>
+  <div class="bonus-heading-label">SPECIAL PRESENT</div>
 
+  <h2 class="bonus-main-heading bonus-main-heading-soft">
+    参加者さま限定プレゼント
+  </h2>
+
+  <p class="bonus-heading-sub">
+    ご登録で1特典、セミナー参加でさらに6特典をお受け取りいただけます♡
+  </p>
+</div>
+      
       <div class="bonus-register-pill">登録だけでもらえる♡</div>
 
       <!-- 特典1 -->
@@ -1199,8 +1218,8 @@ body{
       </div>
       
       <div class="bonus-arrow-text">さらに！</div>
-
-      <div class="bonus-participate-pill">セミナー参加でプラス6大特典</div>
+      
+      <div class="bonus-participate-pill">セミナー参加でさらに6つのプレゼント♡</div>
 
       <!-- 特典2〜7 -->
       <div class="bonus-cards">
