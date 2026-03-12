@@ -661,24 +661,28 @@ font-family:
 /* 特典2〜7 */
 .bonus-card{
   display:grid;
-  grid-template-columns:120px 1fr;
+  grid-template-columns:160px 1fr;
   gap:20px;
   align-items:center;
   background:#ffffff;
   border:1px solid var(--line);
   border-radius:22px;
   box-shadow:var(--shadow);
-  padding:18px 20px;
+  padding:20px 22px;
+  min-height:120px;
 }
 
 .bonus-card-body{
-  display:block;
   min-width:0;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
 }
 
 .bonus-condition{
   display:inline-block;
-  margin-bottom:8px;
+  margin:0 0 10px;
   padding:6px 12px;
   border-radius:999px;
   background:#eef6fb;
@@ -693,7 +697,7 @@ font-family:
   margin:0;
   color:var(--main);
   font-size:clamp(20px, 2.2vw, 28px);
-  line-height:1.5;
+  line-height:1.35;
   font-weight:700;
   letter-spacing:.01em;
   word-break:normal;
